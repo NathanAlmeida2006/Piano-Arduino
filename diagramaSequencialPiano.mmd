@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant Usuário
+    participant Arduino
+    participant Potenciômetro
+    participant Botões
+    participant Buzzer
+    
+    Usuário->>Arduino: Liga o Arduino
+    Arduino->>Potenciômetro: Lê o valor do potenciômetro
+    Potenciômetro-->>Arduino: Retorna valor (0-1023)
+    Arduino->>Arduino: Mapeia valor do potenciômetro para octaveShift
+    
+    loop Verifica Botões
+        Botões->>Arduino: Botão pressionado?
+        alt Botão Pressionado
+            Arduino->>Buzzer: Toca a nota (adjustedNote)
+            Arduino->>Botões: Espera até que o botão seja solto
+            Botões-->>Arduino: Botão solto
+            Arduino->>Buzzer: Para de tocar a nota
+        end
+    end
