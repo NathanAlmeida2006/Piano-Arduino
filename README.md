@@ -46,6 +46,8 @@ Este projeto consiste na criação de um piano usando o Arduino com um sintetiza
 
 Link para a visualização: [https://wokwi.com/projects/402757127671193601](https://wokwi.com/projects/402757127671193601)
 
+![image](https://github.com/NathanAlmeida2006/Piano-Arduino/assets/65135206/11f2a49c-a3af-47c6-b499-9e1d59cfe28b)
+
 ## Contato
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue no repositório do GitHub ou enviar um e-mail para: [nathanfelipi2006@gmail.com](mailto:nathanfelipi2006@gmail.com).
